@@ -1,10 +1,15 @@
+:root {
+    --background: #333;
+    --text: #fff;
+}
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #333;
+    background-color: var(--background);
+}
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--text);
 }
 section {
     position: relative;
@@ -23,10 +28,10 @@ article {
     width: 350px;
     max-width: 100%;
     height: 300px;
-    background-color: #fff;
+    background-color: var(--text);
     border-radius: 20px;
     box-shadow: 0 35px 80px #00000026;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 article:hover {
     height: 400px;
@@ -39,7 +44,7 @@ figure {
     overflow: hidden;
     background-color: #333;
     border-radius: 12px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 article:hover figure {
     top: -100px;
@@ -62,7 +67,7 @@ img {
     padding: 0 30px;
     text-align: center;
     overflow: hidden;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 article:hover .content {
     top: 130px;
